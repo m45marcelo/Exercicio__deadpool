@@ -1,0 +1,87 @@
+.estreitarBordas(){
+    max-width: 92%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.FONTHARMATTAN(){
+    font-family: "Harmattan", serif;
+    
+}
+
+.FONTGANTARI(){
+    font-family: "Gantari", serif;
+}
+
+.hero{
+    height: 100vh;
+    background-image: url(../../build/images/MacBook\ Pro\ 14_\ -\ 2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .container{
+    .estreitarBordas();
+
+        .hero__nav{
+        height: 70px;
+        display: flex;
+        justify-content: flex-end;
+
+            .nav__btn{
+                height: 48px;
+                width: 178px;
+                margin-top: 20px;
+                background-color: #fff;
+                .FONTHARMATTAN();
+                font-size: 32px;
+                font-weight: 400;
+                align-items: center;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                
+                &:hover{
+                    background-color: black;
+                    color: #fff;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .hero__content{
+            width: 500px;
+            margin-top: 6px;
+            .hero__logo{
+                height: 300px;
+            }
+
+            .hero__description{
+                .hero__title{
+                    .FONTGANTARI();
+                    font-size: 48px;
+                    font-weight: 900;
+                }
+
+                .hero__title__info{
+                    .FONTHARMATTAN();
+                    font-size: 24px;
+                    color: #fff;
+                    font-weight: bold;
+                }
+
+                .hero__sinopse{
+                    .FONTHARMATTAN();
+                    font-size: 32px;
+                    font-weight: bold;
+                    color: #fff;
+                    line-height: 2.3rem;
+                    margin-top: 10px;
+                }
+
+            }
+        }
+    }
+}
+
+
+
