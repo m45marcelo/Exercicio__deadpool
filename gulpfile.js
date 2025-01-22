@@ -14,4 +14,4 @@ function comprimirImagens(){
         .pipe(gulp.dest('build/images'))
 }
 
-exports.build = gulp.series(compilaLess, comprimirImagens);
+exports.default = gulp.series(compilaLess, comprimirImagens);
