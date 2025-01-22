@@ -12,13 +12,13 @@ function htmlMin(){
 function compilaLess(){
     return gulp.src('src/less/*.less')
         .pipe(less())
-        .pipe(gulp.dest('build/css'))
+        .pipe(gulp.dest('build'))
 }
 
 function comprimirImagens(){
     return gulp.src('src/images/*')
         .pipe(imagemin())
-        .pipe(gulp.dest('build/images'))
+        .pipe(gulp.dest('build'))
 }
 
 exports.default = gulp.series(htmlMin,compilaLess, comprimirImagens);
