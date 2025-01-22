@@ -1,7 +1,6 @@
-
 const gulp = require('gulp');
 const less = require('gulp-less');
-
+const imagemin = require('gulp-imagemin');
 
 function compilaLess(){
     return gulp.src('src/less/*.less')
@@ -9,9 +8,13 @@ function compilaLess(){
         .pipe(gulp.dest('build/css'))
 }
 
-
+function comprimirImagens(){
+    return gulp.src('src/images/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('build/images'))
+}
 
 exports.default = function(){
-    gulp.watch('src/less/*.less', {ignoreInitial: false}, gulp.parallel(compilaLess))
-    //gulp.watch('src/images/*', {ignoreInitial:false}, gulp.parallel(comprimirImagens))
+    gulp.watch('src/less/*.less', {ignoreInitial: false}, gulp.series(compilaLess))
+    gulp.watch('src/images/*', {ignoreInitial:false}, gulp.series(comprimirImagens))
 }
