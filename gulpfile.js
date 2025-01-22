@@ -1,24 +1,20 @@
 const gulp = require('gulp');
 const less = require('gulp-less');
 const imagemin = require('gulp-imagemin');
-const html = require('gulp-htmlmin');
-
-function htmlMin(){
-    return gulp.src('src/*.html')
-    .pipe(html({ collapseWhitespace: true }))
-    .pipe(gulp.dest('build'));
-}
 
 function compilaLess(){
     return gulp.src('src/less/*.less')
         .pipe(less())
-        .pipe(gulp.dest('build'))
+        .pipe(gulp.dest('build/css'))
 }
 
 function comprimirImagens(){
     return gulp.src('src/images/*')
         .pipe(imagemin())
-        .pipe(gulp.dest('build'))
+        .pipe(gulp.dest('build/images'))
 }
 
-exports.default = gulp.series(htmlMin,compilaLess, comprimirImagens);
+exports.default = function(){
+    gulp.watch('src/less/*.less', {ignoreInitial: true}, gulp.series(compilaLess))
+    gulp.watch('src/images/*', {ignoreInitial:false}, gulp.series(comprimirImagens))
+}
