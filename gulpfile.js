@@ -1,12 +1,5 @@
 const gulp = require('gulp');
-const less = require('gulp-less');
 const imagemin = require('gulp-imagemin');
-
-function compilaLess(){
-    return gulp.src('src/less/*.less')
-        .pipe(less())
-        .pipe(gulp.dest('dist/css'))
-}
 
 function comprimirImagens(){
     return gulp.src('src/images/*')
@@ -15,6 +8,5 @@ function comprimirImagens(){
 }
 
 exports.default = function(){
-    gulp.watch('src/less/*.less', {ignoreInitial: false}, gulp.series(compilaLess))
     gulp.watch('src/images/*', {ignoreInitial:false}, gulp.series(comprimirImagens))
 }
