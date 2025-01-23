@@ -1,0 +1,182 @@
+.hero {
+  height: 100vh;
+  background-image: url(../../dist/images/MacBook\ Pro\ 14_\ -\ 2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero .container {
+  max-width: 92%;
+  width: 100%;
+  margin: 0 auto;
+}
+.hero .container .hero__nav {
+  height: 70px;
+  display: flex;
+  justify-content: flex-end;
+}
+.hero .container .hero__nav .nav__btn {
+  height: 42px;
+  width: 160px;
+  margin-top: 20px;
+  background-color: #fff;
+  font-family: "Harmattan", serif;
+  font-size: 32px;
+  font-weight: 400;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.hero .container .hero__nav .nav__btn:hover {
+  background-color: black;
+  color: #fff;
+  cursor: pointer;
+}
+.hero .container .hero__content {
+  width: 500px;
+  margin-top: 6px;
+}
+.hero .container .hero__content .hero__logo {
+  height: 260px;
+}
+.hero .container .hero__content .hero__description .hero__title {
+  font-family: "Gantari", serif;
+  font-size: 42px;
+  font-weight: 900;
+}
+.hero .container .hero__content .hero__description .hero__title__info {
+  font-family: "Harmattan", serif;
+  font-size: 22px;
+  color: #fff;
+  font-weight: bold;
+}
+.hero .container .hero__content .hero__description .hero__sinopse {
+  font-family: "Harmattan", serif;
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  line-height: 2.3rem;
+  margin-top: 10px;
+}
+.subhero {
+  background-image: url(../../dist/images/full.png);
+  background-size: cover;
+}
+.subhero .container {
+  max-width: 92%;
+  width: 100%;
+  margin: 0 auto;
+}
+.subhero .container .subhero__content .subhero__title {
+  font-family: "Gantari", serif;
+  font-size: 50px;
+  color: #fff;
+  width: 700px;
+  font-weight: 900;
+  margin: 0px 0px 20px 70px;
+}
+.subhero .container .subhero__content .motivo1 {
+  margin-left: 190px;
+}
+.subhero .container .subhero__content .motivo1 .motivo1__title {
+  font-family: "Gantari", serif;
+  font-size: 42px;
+  font-weight: 900;
+  margin: 20px 0px 20px 0px;
+}
+.subhero .container .subhero__content .motivo1 .motivo1__box {
+  background-color: #fff;
+  border: 3px solid black;
+  border-radius: 8px;
+  display: flex;
+  height: 50px;
+}
+.subhero .container .subhero__content .motivo1 .motivo1__box .motivo1__subtitle {
+  font-family: "Harmattan", serif;
+  font-size: 28px;
+  font-weight: bold;
+  padding-left: 16px;
+  height: 40px;
+}
+.subhero .container .subhero__content .motivo2 {
+  margin-left: 324px;
+}
+.subhero .container .subhero__content .motivo2 .motivo2__title {
+  font-family: "Gantari", serif;
+  font-size: 42px;
+  font-weight: 900;
+  margin: 20px 0px 20px 0px;
+}
+.subhero .container .subhero__content .motivo2 .motivo2__box {
+  background-color: #fff;
+  border: 3px solid black;
+  border-radius: 8px;
+  display: flex;
+  height: 50px;
+}
+.subhero .container .subhero__content .motivo2 .motivo2__box .motivo2__subtitle {
+  font-family: "Harmattan", serif;
+  font-size: 28px;
+  font-weight: bold;
+  padding-left: 16px;
+  height: 40px;
+}
+.subhero .container .subhero__content .motivo3 {
+  margin-left: 456px;
+}
+.subhero .container .subhero__content .motivo3 .motivo3__title {
+  font-family: "Gantari", serif;
+  font-size: 42px;
+  font-weight: 900;
+  margin: 20px 0px 20px 0px;
+}
+.subhero .container .subhero__content .motivo3 .motivo3__box {
+  background-color: #fff;
+  border: 3px solid black;
+  border-radius: 8px;
+  display: flex;
+  height: 50px;
+}
+.subhero .container .subhero__content .motivo3 .motivo3__box .motivo3__subtitle {
+  font-family: "Harmattan", serif;
+  font-size: 28px;
+  font-weight: bold;
+  padding-left: 16px;
+  height: 40px;
+}
+.subhero .container .subhero__content .onde__assistir {
+  margin: 40px 0px 0px 600px;
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  align-items: center;
+}
+.subhero .container .subhero__content .onde__assistir .onde__assistir__title {
+  font-size: 50px;
+  font-weight: 900;
+  font-family: "Gantari", serif;
+}
+.subhero .container .subhero__content .onde__assistir .onde__assistir__logo {
+  height: 140px;
+}
+footer {
+  background-color: black;
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  font-family: "Harmattan", serif;
+  height: 70px;
+  align-items: center;
+  font-size: 24px;
+}
+footer .footer__content {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+footer .footer__content #link__logo {
+  height: 40px;
+}
+footer .footer__content .git__logo {
+  height: 40px;
+}

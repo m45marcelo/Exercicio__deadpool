@@ -5,13 +5,13 @@ const imagemin = require('gulp-imagemin');
 function compilaLess(){
     return gulp.src('src/less/*.less')
         .pipe(less())
-        .pipe(gulp.dest('build/css'))
+        .pipe(gulp.dest('dist/css'))
 }
 
 function comprimirImagens(){
     return gulp.src('src/images/*')
         .pipe(imagemin())
-        .pipe(gulp.dest('build/images'))
+        .pipe(gulp.dest('dist/images'))
 }
 
 exports.default = function(){
